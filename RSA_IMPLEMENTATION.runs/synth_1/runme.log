@@ -1,0 +1,974 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z020clg484-1 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8764
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1228.527 ; gain = 258.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/top.vhd:43]
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter register_amount bound to: 192 - type: integer 
+INFO: [Synth 8-3491] module 'reg_bank' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:33' bound to instance 'DATA_MEM' of component 'reg_bank' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/top.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'reg_bank' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:48]
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter addr_width bound to: 8 - type: integer 
+	Parameter register_amount bound to: 192 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:43]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_comp' (1#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:43]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'reg_comp' declared at 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:34' bound to instance 'REG_INST' of component 'reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:68]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_bank' (2#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:48]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter addr_width bound to: 2 - type: integer 
+	Parameter register_amount bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reg_bank__parameterized1' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:48]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter addr_width bound to: 2 - type: integer 
+	Parameter register_amount bound to: 3 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reg_comp__parameterized2' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:43]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_comp__parameterized2' (2#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_comp.vhd:43]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_bank__parameterized1' (2#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank.vhd:48]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter addr_width bound to: 3 - type: integer 
+	Parameter register_amount bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'reg_bank_3_out' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank_3_out.vhd:51]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter addr_width bound to: 3 - type: integer 
+	Parameter register_amount bound to: 7 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'reg_bank_3_out' (3#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/reg_bank_3_out.vhd:51]
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'bit_reg_comp' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/bit_reg_comp.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'bit_reg_comp' (4#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/bit_reg_comp.vhd:43]
+	Parameter counter_data_width bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/counter.vhd:44]
+	Parameter counter_data_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (5#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/counter.vhd:44]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/adder.vhd:42]
+	Parameter data_width bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'full_adder' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/full_adder.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'half_adder' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/half_adder.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'half_adder' (6#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/half_adder.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (7#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/full_adder.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'adder' (8#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/adder.vhd:42]
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter shift_amount_width bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'shiftleft' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/shiftleft.vhd:43]
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter shift_amount_width bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shiftleft' (9#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/shiftleft.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/FSM.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (10#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/FSM.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'top' (11#1) [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/top.vhd:43]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1684.672 ; gain = 715.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1684.672 ; gain = 715.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1684.672 ; gain = 715.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_s_reg' in module 'FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |            000000000000000000001 |                           000000
+                    init |            000000000000000000010 |                           000001
+               data_load |            000000000000000000100 |                           000010
+ mgt_first_set_write_reg |            000000000000000001000 |                           000011
+      mgt_first_set_op_a |            000000000000000010000 |                           000100
+      mgt_first_set_op_b |            000000000000000100000 |                           000101
+          s_mul_accu_low |            000000000000001000000 |                           000110
+         s_mul_accu_high |            000000000000010000000 |                           000111
+s_load_mul_result_counter |            000000000000100000000 |                           001000
+             s_store_low |            000000000001000000000 |                           001001
+            s_store_high |            000000000010000000000 |                           001010
+       s_propagate_carry |            000000000100000000000 |                           001011
+     s_load_op_b_counter |            000000001000000000000 |                           001100
+    s_check_op_b_counter |            000000010000000000000 |                           001101
+    s_reset_op_b_counter |            000000100000000000000 |                           001111
+     s_load_op_a_counter |            000001000000000000000 |                           010000
+    s_check_op_a_counter |            000010000000000000000 |                           010001
+                    done |            000100000000000000000 |                           100101
+    s_store_op_a_counter |            001000000000000000000 |                           010010
+s_init_mul_result_counter |            010000000000000000000 |                           010011
+    s_store_op_b_counter |            100000000000000000000 |                           001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_s_reg' using encoding 'one-hot' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'address_mem_data_input_o_reg' [C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.srcs/sources_1/new/FSM.vhd:191]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1684.672 ; gain = 715.020
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 6     
+	   2 Input      1 Bit         XORs := 128   
++---Registers : 
+	               64 Bit    Registers := 194   
+	               31 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 6     
+	   3 Input   64 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	  21 Input   21 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 6     
+	   3 Input    8 Bit        Muxes := 2     
+	  21 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	  21 Input    3 Bit        Muxes := 2     
+	  21 Input    2 Bit        Muxes := 2     
+	  21 Input    1 Bit        Muxes := 13    
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:33:50 ; elapsed = 00:34:02 . Memory (MB): peak = 1684.672 ; gain = 715.020
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 01:10:31 ; elapsed = 01:12:11 . Memory (MB): peak = 1684.672 ; gain = 715.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 01:29:57 ; elapsed = 01:34:12 . Memory (MB): peak = 1684.672 ; gain = 715.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 01:30:04 ; elapsed = 01:34:30 . Memory (MB): peak = 1684.672 ; gain = 715.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 01:30:04 ; elapsed = 01:34:30 . Memory (MB): peak = 1684.672 ; gain = 715.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 01:30:04 ; elapsed = 01:34:31 . Memory (MB): peak = 1684.672 ; gain = 715.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     2|
+|3     |LUT1   |   199|
+|4     |LUT2   |   331|
+|5     |LUT3   |   143|
+|6     |LUT4   |   134|
+|7     |LUT5   |   274|
+|8     |LUT6   |  6981|
+|9     |MUXF7  |  3080|
+|10    |MUXF8  |  1536|
+|11    |FDRE   | 12486|
+|12    |FDSE   |     1|
+|13    |LD     |     3|
+|14    |IBUF   |    67|
+|15    |OBUF   |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+----------------------------+------+
+|      |Instance                     |Module                      |Cells |
++------+-----------------------------+----------------------------+------+
+|1     |top                          |                            | 25239|
+|2     |  DATA_MEM                   |reg_bank                    | 23948|
+|3     |    \G0[0].REG_INST          |reg_comp__1                 |    65|
+|4     |    \G0[1].REG_INST          |reg_comp__2                 |    65|
+|5     |    \G0[2].REG_INST          |reg_comp__3                 |    65|
+|6     |    \G0[3].REG_INST          |reg_comp__4                 |    65|
+|7     |    \G0[4].REG_INST          |reg_comp__5                 |    65|
+|8     |    \G0[5].REG_INST          |reg_comp__6                 |    65|
+|9     |    \G0[6].REG_INST          |reg_comp__7                 |    65|
+|10    |    \G0[7].REG_INST          |reg_comp__8                 |    65|
+|11    |    \G0[8].REG_INST          |reg_comp__9                 |    65|
+|12    |    \G0[9].REG_INST          |reg_comp__10                |    65|
+|13    |    \G0[10].REG_INST         |reg_comp__11                |    65|
+|14    |    \G0[11].REG_INST         |reg_comp__12                |    65|
+|15    |    \G0[12].REG_INST         |reg_comp__13                |    65|
+|16    |    \G0[13].REG_INST         |reg_comp__14                |    65|
+|17    |    \G0[14].REG_INST         |reg_comp__15                |    65|
+|18    |    \G0[15].REG_INST         |reg_comp__16                |    65|
+|19    |    \G0[16].REG_INST         |reg_comp__17                |    65|
+|20    |    \G0[17].REG_INST         |reg_comp__18                |    65|
+|21    |    \G0[18].REG_INST         |reg_comp__19                |    65|
+|22    |    \G0[19].REG_INST         |reg_comp__20                |    65|
+|23    |    \G0[20].REG_INST         |reg_comp__21                |    65|
+|24    |    \G0[21].REG_INST         |reg_comp__22                |    65|
+|25    |    \G0[22].REG_INST         |reg_comp__23                |    65|
+|26    |    \G0[23].REG_INST         |reg_comp__24                |    65|
+|27    |    \G0[24].REG_INST         |reg_comp__25                |    65|
+|28    |    \G0[25].REG_INST         |reg_comp__26                |    65|
+|29    |    \G0[26].REG_INST         |reg_comp__27                |    65|
+|30    |    \G0[27].REG_INST         |reg_comp__28                |    65|
+|31    |    \G0[28].REG_INST         |reg_comp__29                |    65|
+|32    |    \G0[29].REG_INST         |reg_comp__30                |    65|
+|33    |    \G0[30].REG_INST         |reg_comp__31                |    65|
+|34    |    \G0[31].REG_INST         |reg_comp__32                |    65|
+|35    |    \G0[32].REG_INST         |reg_comp__33                |    65|
+|36    |    \G0[33].REG_INST         |reg_comp__34                |    65|
+|37    |    \G0[34].REG_INST         |reg_comp__35                |    65|
+|38    |    \G0[35].REG_INST         |reg_comp__36                |    65|
+|39    |    \G0[36].REG_INST         |reg_comp__37                |    65|
+|40    |    \G0[37].REG_INST         |reg_comp__38                |    65|
+|41    |    \G0[38].REG_INST         |reg_comp__39                |    65|
+|42    |    \G0[39].REG_INST         |reg_comp__40                |    65|
+|43    |    \G0[40].REG_INST         |reg_comp__41                |    65|
+|44    |    \G0[41].REG_INST         |reg_comp__42                |    65|
+|45    |    \G0[42].REG_INST         |reg_comp__43                |    65|
+|46    |    \G0[43].REG_INST         |reg_comp__44                |    65|
+|47    |    \G0[44].REG_INST         |reg_comp__45                |    65|
+|48    |    \G0[45].REG_INST         |reg_comp__46                |    65|
+|49    |    \G0[46].REG_INST         |reg_comp__47                |    65|
+|50    |    \G0[47].REG_INST         |reg_comp__48                |    65|
+|51    |    \G0[48].REG_INST         |reg_comp__49                |    65|
+|52    |    \G0[49].REG_INST         |reg_comp__50                |    65|
+|53    |    \G0[50].REG_INST         |reg_comp__51                |    65|
+|54    |    \G0[51].REG_INST         |reg_comp__52                |    65|
+|55    |    \G0[52].REG_INST         |reg_comp__53                |    65|
+|56    |    \G0[53].REG_INST         |reg_comp__54                |    65|
+|57    |    \G0[54].REG_INST         |reg_comp__55                |    65|
+|58    |    \G0[55].REG_INST         |reg_comp__56                |    65|
+|59    |    \G0[56].REG_INST         |reg_comp__57                |    65|
+|60    |    \G0[57].REG_INST         |reg_comp__58                |    65|
+|61    |    \G0[58].REG_INST         |reg_comp__59                |    65|
+|62    |    \G0[59].REG_INST         |reg_comp__60                |    65|
+|63    |    \G0[60].REG_INST         |reg_comp__61                |    65|
+|64    |    \G0[61].REG_INST         |reg_comp__62                |    65|
+|65    |    \G0[62].REG_INST         |reg_comp__63                |    65|
+|66    |    \G0[63].REG_INST         |reg_comp__64                |    65|
+|67    |    \G0[64].REG_INST         |reg_comp__65                |    65|
+|68    |    \G0[65].REG_INST         |reg_comp__66                |    65|
+|69    |    \G0[66].REG_INST         |reg_comp__67                |    65|
+|70    |    \G0[67].REG_INST         |reg_comp__68                |    65|
+|71    |    \G0[68].REG_INST         |reg_comp__69                |    65|
+|72    |    \G0[69].REG_INST         |reg_comp__70                |    65|
+|73    |    \G0[70].REG_INST         |reg_comp__71                |    65|
+|74    |    \G0[71].REG_INST         |reg_comp__72                |    65|
+|75    |    \G0[72].REG_INST         |reg_comp__73                |    65|
+|76    |    \G0[73].REG_INST         |reg_comp__74                |    65|
+|77    |    \G0[74].REG_INST         |reg_comp__75                |    65|
+|78    |    \G0[75].REG_INST         |reg_comp__76                |    65|
+|79    |    \G0[76].REG_INST         |reg_comp__77                |    65|
+|80    |    \G0[77].REG_INST         |reg_comp__78                |    65|
+|81    |    \G0[78].REG_INST         |reg_comp__79                |    65|
+|82    |    \G0[79].REG_INST         |reg_comp__80                |    65|
+|83    |    \G0[80].REG_INST         |reg_comp__81                |    65|
+|84    |    \G0[81].REG_INST         |reg_comp__82                |    65|
+|85    |    \G0[82].REG_INST         |reg_comp__83                |    65|
+|86    |    \G0[83].REG_INST         |reg_comp__84                |    65|
+|87    |    \G0[84].REG_INST         |reg_comp__85                |    65|
+|88    |    \G0[85].REG_INST         |reg_comp__86                |    65|
+|89    |    \G0[86].REG_INST         |reg_comp__87                |    65|
+|90    |    \G0[87].REG_INST         |reg_comp__88                |    65|
+|91    |    \G0[88].REG_INST         |reg_comp__89                |    65|
+|92    |    \G0[89].REG_INST         |reg_comp__90                |    65|
+|93    |    \G0[90].REG_INST         |reg_comp__91                |    65|
+|94    |    \G0[91].REG_INST         |reg_comp__92                |    65|
+|95    |    \G0[92].REG_INST         |reg_comp__93                |    65|
+|96    |    \G0[93].REG_INST         |reg_comp__94                |    65|
+|97    |    \G0[94].REG_INST         |reg_comp__95                |    65|
+|98    |    \G0[95].REG_INST         |reg_comp__96                |    65|
+|99    |    \G0[96].REG_INST         |reg_comp__97                |    65|
+|100   |    \G0[97].REG_INST         |reg_comp__98                |    65|
+|101   |    \G0[98].REG_INST         |reg_comp__99                |    65|
+|102   |    \G0[99].REG_INST         |reg_comp__100               |    65|
+|103   |    \G0[100].REG_INST        |reg_comp__101               |    65|
+|104   |    \G0[101].REG_INST        |reg_comp__102               |    65|
+|105   |    \G0[102].REG_INST        |reg_comp__103               |    65|
+|106   |    \G0[103].REG_INST        |reg_comp__104               |    65|
+|107   |    \G0[104].REG_INST        |reg_comp__105               |    65|
+|108   |    \G0[105].REG_INST        |reg_comp__106               |    65|
+|109   |    \G0[106].REG_INST        |reg_comp__107               |    65|
+|110   |    \G0[107].REG_INST        |reg_comp__108               |    65|
+|111   |    \G0[108].REG_INST        |reg_comp__109               |    65|
+|112   |    \G0[109].REG_INST        |reg_comp__110               |    65|
+|113   |    \G0[110].REG_INST        |reg_comp__111               |    65|
+|114   |    \G0[111].REG_INST        |reg_comp__112               |    65|
+|115   |    \G0[112].REG_INST        |reg_comp__113               |    65|
+|116   |    \G0[113].REG_INST        |reg_comp__114               |    65|
+|117   |    \G0[114].REG_INST        |reg_comp__115               |    65|
+|118   |    \G0[115].REG_INST        |reg_comp__116               |    65|
+|119   |    \G0[116].REG_INST        |reg_comp__117               |    65|
+|120   |    \G0[117].REG_INST        |reg_comp__118               |    65|
+|121   |    \G0[118].REG_INST        |reg_comp__119               |    65|
+|122   |    \G0[119].REG_INST        |reg_comp__120               |    65|
+|123   |    \G0[120].REG_INST        |reg_comp__121               |    65|
+|124   |    \G0[121].REG_INST        |reg_comp__122               |    65|
+|125   |    \G0[122].REG_INST        |reg_comp__123               |    65|
+|126   |    \G0[123].REG_INST        |reg_comp__124               |    65|
+|127   |    \G0[124].REG_INST        |reg_comp__125               |    65|
+|128   |    \G0[125].REG_INST        |reg_comp__126               |    65|
+|129   |    \G0[126].REG_INST        |reg_comp__127               |    65|
+|130   |    \G0[127].REG_INST        |reg_comp__128               |    65|
+|131   |    \G0[128].REG_INST        |reg_comp__129               |    65|
+|132   |    \G0[129].REG_INST        |reg_comp__130               |    65|
+|133   |    \G0[130].REG_INST        |reg_comp__131               |    65|
+|134   |    \G0[131].REG_INST        |reg_comp__132               |    65|
+|135   |    \G0[132].REG_INST        |reg_comp__133               |    65|
+|136   |    \G0[133].REG_INST        |reg_comp__134               |    65|
+|137   |    \G0[134].REG_INST        |reg_comp__135               |    65|
+|138   |    \G0[135].REG_INST        |reg_comp__136               |    65|
+|139   |    \G0[136].REG_INST        |reg_comp__137               |    65|
+|140   |    \G0[137].REG_INST        |reg_comp__138               |    65|
+|141   |    \G0[138].REG_INST        |reg_comp__139               |    65|
+|142   |    \G0[139].REG_INST        |reg_comp__140               |    65|
+|143   |    \G0[140].REG_INST        |reg_comp__141               |    65|
+|144   |    \G0[141].REG_INST        |reg_comp__142               |    65|
+|145   |    \G0[142].REG_INST        |reg_comp__143               |    65|
+|146   |    \G0[143].REG_INST        |reg_comp__144               |    65|
+|147   |    \G0[144].REG_INST        |reg_comp__145               |    65|
+|148   |    \G0[145].REG_INST        |reg_comp__146               |    65|
+|149   |    \G0[146].REG_INST        |reg_comp__147               |    65|
+|150   |    \G0[147].REG_INST        |reg_comp__148               |    65|
+|151   |    \G0[148].REG_INST        |reg_comp__149               |    65|
+|152   |    \G0[149].REG_INST        |reg_comp__150               |    65|
+|153   |    \G0[150].REG_INST        |reg_comp__151               |    65|
+|154   |    \G0[151].REG_INST        |reg_comp__152               |    65|
+|155   |    \G0[152].REG_INST        |reg_comp__153               |    65|
+|156   |    \G0[153].REG_INST        |reg_comp__154               |    65|
+|157   |    \G0[154].REG_INST        |reg_comp__155               |    65|
+|158   |    \G0[155].REG_INST        |reg_comp__156               |    65|
+|159   |    \G0[156].REG_INST        |reg_comp__157               |    65|
+|160   |    \G0[157].REG_INST        |reg_comp__158               |    65|
+|161   |    \G0[158].REG_INST        |reg_comp__159               |    65|
+|162   |    \G0[159].REG_INST        |reg_comp__160               |    65|
+|163   |    \G0[160].REG_INST        |reg_comp__161               |    65|
+|164   |    \G0[161].REG_INST        |reg_comp__162               |    65|
+|165   |    \G0[162].REG_INST        |reg_comp__163               |    65|
+|166   |    \G0[163].REG_INST        |reg_comp__164               |    65|
+|167   |    \G0[164].REG_INST        |reg_comp__165               |    65|
+|168   |    \G0[165].REG_INST        |reg_comp__166               |    65|
+|169   |    \G0[166].REG_INST        |reg_comp__167               |    65|
+|170   |    \G0[167].REG_INST        |reg_comp__168               |    65|
+|171   |    \G0[168].REG_INST        |reg_comp__169               |    65|
+|172   |    \G0[169].REG_INST        |reg_comp__170               |    65|
+|173   |    \G0[170].REG_INST        |reg_comp__171               |    65|
+|174   |    \G0[171].REG_INST        |reg_comp__172               |    65|
+|175   |    \G0[172].REG_INST        |reg_comp__173               |    65|
+|176   |    \G0[173].REG_INST        |reg_comp__174               |    65|
+|177   |    \G0[174].REG_INST        |reg_comp__175               |    65|
+|178   |    \G0[175].REG_INST        |reg_comp__176               |    65|
+|179   |    \G0[176].REG_INST        |reg_comp__177               |    65|
+|180   |    \G0[177].REG_INST        |reg_comp__178               |    65|
+|181   |    \G0[178].REG_INST        |reg_comp__179               |    65|
+|182   |    \G0[179].REG_INST        |reg_comp__180               |    65|
+|183   |    \G0[180].REG_INST        |reg_comp__181               |    65|
+|184   |    \G0[181].REG_INST        |reg_comp__182               |    65|
+|185   |    \G0[182].REG_INST        |reg_comp__183               |    65|
+|186   |    \G0[183].REG_INST        |reg_comp__184               |    65|
+|187   |    \G0[184].REG_INST        |reg_comp__185               |    65|
+|188   |    \G0[185].REG_INST        |reg_comp__186               |    65|
+|189   |    \G0[186].REG_INST        |reg_comp__187               |    65|
+|190   |    \G0[187].REG_INST        |reg_comp__188               |    65|
+|191   |    \G0[188].REG_INST        |reg_comp__189               |    65|
+|192   |    \G0[189].REG_INST        |reg_comp__190               |    65|
+|193   |    \G0[190].REG_INST        |reg_comp__191               |    65|
+|194   |    \G0[191].REG_INST        |reg_comp__192               |    65|
+|195   |  COUNTER_MEM                |reg_bank__parameterized1    |    46|
+|196   |    \G0[0].REG_INST          |reg_comp__parameterized2__1 |     9|
+|197   |    \G0[1].REG_INST          |reg_comp__parameterized2__2 |     9|
+|198   |    \G0[2].REG_INST          |reg_comp__parameterized2__3 |     9|
+|199   |  ADDRESS_MEM                |reg_bank_3_out              |    27|
+|200   |    \G0[0].REG_INST          |reg_comp__parameterized2__4 |     6|
+|201   |    \G0[1].REG_INST          |reg_comp__parameterized2__5 |     6|
+|202   |    \G0[6].REG_INST          |reg_comp__parameterized2    |     6|
+|203   |  accu_0                     |reg_comp__193               |    65|
+|204   |  accu_1                     |reg_comp                    |    65|
+|205   |  CARRY_REG                  |bit_reg_comp                |     2|
+|206   |  COUNTER_INST               |counter                     |    28|
+|207   |  ADDER_INST                 |adder                       |   320|
+|208   |    \G0[0].FULL_ADDER_INST   |full_adder__1               |     5|
+|209   |      HALF_ADDER_0           |half_adder__3               |     2|
+|210   |      HALF_ADDER_1           |half_adder__2               |     2|
+|211   |    \G0[1].FULL_ADDER_INST   |full_adder__2               |     5|
+|212   |      HALF_ADDER_0           |half_adder__5               |     2|
+|213   |      HALF_ADDER_1           |half_adder__4               |     2|
+|214   |    \G0[2].FULL_ADDER_INST   |full_adder__3               |     5|
+|215   |      HALF_ADDER_0           |half_adder__7               |     2|
+|216   |      HALF_ADDER_1           |half_adder__6               |     2|
+|217   |    \G0[3].FULL_ADDER_INST   |full_adder__4               |     5|
+|218   |      HALF_ADDER_0           |half_adder__9               |     2|
+|219   |      HALF_ADDER_1           |half_adder__8               |     2|
+|220   |    \G0[4].FULL_ADDER_INST   |full_adder__5               |     5|
+|221   |      HALF_ADDER_0           |half_adder__11              |     2|
+|222   |      HALF_ADDER_1           |half_adder__10              |     2|
+|223   |    \G0[5].FULL_ADDER_INST   |full_adder__6               |     5|
+|224   |      HALF_ADDER_0           |half_adder__13              |     2|
+|225   |      HALF_ADDER_1           |half_adder__12              |     2|
+|226   |    \G0[6].FULL_ADDER_INST   |full_adder__7               |     5|
+|227   |      HALF_ADDER_0           |half_adder__15              |     2|
+|228   |      HALF_ADDER_1           |half_adder__14              |     2|
+|229   |    \G0[7].FULL_ADDER_INST   |full_adder__8               |     5|
+|230   |      HALF_ADDER_0           |half_adder__17              |     2|
+|231   |      HALF_ADDER_1           |half_adder__16              |     2|
+|232   |    \G0[8].FULL_ADDER_INST   |full_adder__9               |     5|
+|233   |      HALF_ADDER_0           |half_adder__19              |     2|
+|234   |      HALF_ADDER_1           |half_adder__18              |     2|
+|235   |    \G0[9].FULL_ADDER_INST   |full_adder__10              |     5|
+|236   |      HALF_ADDER_0           |half_adder__21              |     2|
+|237   |      HALF_ADDER_1           |half_adder__20              |     2|
+|238   |    \G0[10].FULL_ADDER_INST  |full_adder__11              |     5|
+|239   |      HALF_ADDER_0           |half_adder__23              |     2|
+|240   |      HALF_ADDER_1           |half_adder__22              |     2|
+|241   |    \G0[11].FULL_ADDER_INST  |full_adder__12              |     5|
+|242   |      HALF_ADDER_0           |half_adder__25              |     2|
+|243   |      HALF_ADDER_1           |half_adder__24              |     2|
+|244   |    \G0[12].FULL_ADDER_INST  |full_adder__13              |     5|
+|245   |      HALF_ADDER_0           |half_adder__27              |     2|
+|246   |      HALF_ADDER_1           |half_adder__26              |     2|
+|247   |    \G0[13].FULL_ADDER_INST  |full_adder__14              |     5|
+|248   |      HALF_ADDER_0           |half_adder__29              |     2|
+|249   |      HALF_ADDER_1           |half_adder__28              |     2|
+|250   |    \G0[14].FULL_ADDER_INST  |full_adder__15              |     5|
+|251   |      HALF_ADDER_0           |half_adder__31              |     2|
+|252   |      HALF_ADDER_1           |half_adder__30              |     2|
+|253   |    \G0[15].FULL_ADDER_INST  |full_adder__16              |     5|
+|254   |      HALF_ADDER_0           |half_adder__33              |     2|
+|255   |      HALF_ADDER_1           |half_adder__32              |     2|
+|256   |    \G0[16].FULL_ADDER_INST  |full_adder__17              |     5|
+|257   |      HALF_ADDER_0           |half_adder__35              |     2|
+|258   |      HALF_ADDER_1           |half_adder__34              |     2|
+|259   |    \G0[17].FULL_ADDER_INST  |full_adder__18              |     5|
+|260   |      HALF_ADDER_0           |half_adder__37              |     2|
+|261   |      HALF_ADDER_1           |half_adder__36              |     2|
+|262   |    \G0[18].FULL_ADDER_INST  |full_adder__19              |     5|
+|263   |      HALF_ADDER_0           |half_adder__39              |     2|
+|264   |      HALF_ADDER_1           |half_adder__38              |     2|
+|265   |    \G0[19].FULL_ADDER_INST  |full_adder__20              |     5|
+|266   |      HALF_ADDER_0           |half_adder__41              |     2|
+|267   |      HALF_ADDER_1           |half_adder__40              |     2|
+|268   |    \G0[20].FULL_ADDER_INST  |full_adder__21              |     5|
+|269   |      HALF_ADDER_0           |half_adder__43              |     2|
+|270   |      HALF_ADDER_1           |half_adder__42              |     2|
+|271   |    \G0[21].FULL_ADDER_INST  |full_adder__22              |     5|
+|272   |      HALF_ADDER_0           |half_adder__45              |     2|
+|273   |      HALF_ADDER_1           |half_adder__44              |     2|
+|274   |    \G0[22].FULL_ADDER_INST  |full_adder__23              |     5|
+|275   |      HALF_ADDER_0           |half_adder__47              |     2|
+|276   |      HALF_ADDER_1           |half_adder__46              |     2|
+|277   |    \G0[23].FULL_ADDER_INST  |full_adder__24              |     5|
+|278   |      HALF_ADDER_0           |half_adder__49              |     2|
+|279   |      HALF_ADDER_1           |half_adder__48              |     2|
+|280   |    \G0[24].FULL_ADDER_INST  |full_adder__25              |     5|
+|281   |      HALF_ADDER_0           |half_adder__51              |     2|
+|282   |      HALF_ADDER_1           |half_adder__50              |     2|
+|283   |    \G0[25].FULL_ADDER_INST  |full_adder__26              |     5|
+|284   |      HALF_ADDER_0           |half_adder__53              |     2|
+|285   |      HALF_ADDER_1           |half_adder__52              |     2|
+|286   |    \G0[26].FULL_ADDER_INST  |full_adder__27              |     5|
+|287   |      HALF_ADDER_0           |half_adder__55              |     2|
+|288   |      HALF_ADDER_1           |half_adder__54              |     2|
+|289   |    \G0[27].FULL_ADDER_INST  |full_adder__28              |     5|
+|290   |      HALF_ADDER_0           |half_adder__57              |     2|
+|291   |      HALF_ADDER_1           |half_adder__56              |     2|
+|292   |    \G0[28].FULL_ADDER_INST  |full_adder__29              |     5|
+|293   |      HALF_ADDER_0           |half_adder__59              |     2|
+|294   |      HALF_ADDER_1           |half_adder__58              |     2|
+|295   |    \G0[29].FULL_ADDER_INST  |full_adder__30              |     5|
+|296   |      HALF_ADDER_0           |half_adder__61              |     2|
+|297   |      HALF_ADDER_1           |half_adder__60              |     2|
+|298   |    \G0[30].FULL_ADDER_INST  |full_adder__31              |     5|
+|299   |      HALF_ADDER_0           |half_adder__63              |     2|
+|300   |      HALF_ADDER_1           |half_adder__62              |     2|
+|301   |    \G0[31].FULL_ADDER_INST  |full_adder__32              |     5|
+|302   |      HALF_ADDER_0           |half_adder__65              |     2|
+|303   |      HALF_ADDER_1           |half_adder__64              |     2|
+|304   |    \G0[32].FULL_ADDER_INST  |full_adder__33              |     5|
+|305   |      HALF_ADDER_0           |half_adder__67              |     2|
+|306   |      HALF_ADDER_1           |half_adder__66              |     2|
+|307   |    \G0[33].FULL_ADDER_INST  |full_adder__34              |     5|
+|308   |      HALF_ADDER_0           |half_adder__69              |     2|
+|309   |      HALF_ADDER_1           |half_adder__68              |     2|
+|310   |    \G0[34].FULL_ADDER_INST  |full_adder__35              |     5|
+|311   |      HALF_ADDER_0           |half_adder__71              |     2|
+|312   |      HALF_ADDER_1           |half_adder__70              |     2|
+|313   |    \G0[35].FULL_ADDER_INST  |full_adder__36              |     5|
+|314   |      HALF_ADDER_0           |half_adder__73              |     2|
+|315   |      HALF_ADDER_1           |half_adder__72              |     2|
+|316   |    \G0[36].FULL_ADDER_INST  |full_adder__37              |     5|
+|317   |      HALF_ADDER_0           |half_adder__75              |     2|
+|318   |      HALF_ADDER_1           |half_adder__74              |     2|
+|319   |    \G0[37].FULL_ADDER_INST  |full_adder__38              |     5|
+|320   |      HALF_ADDER_0           |half_adder__77              |     2|
+|321   |      HALF_ADDER_1           |half_adder__76              |     2|
+|322   |    \G0[38].FULL_ADDER_INST  |full_adder__39              |     5|
+|323   |      HALF_ADDER_0           |half_adder__79              |     2|
+|324   |      HALF_ADDER_1           |half_adder__78              |     2|
+|325   |    \G0[39].FULL_ADDER_INST  |full_adder__40              |     5|
+|326   |      HALF_ADDER_0           |half_adder__81              |     2|
+|327   |      HALF_ADDER_1           |half_adder__80              |     2|
+|328   |    \G0[40].FULL_ADDER_INST  |full_adder__41              |     5|
+|329   |      HALF_ADDER_0           |half_adder__83              |     2|
+|330   |      HALF_ADDER_1           |half_adder__82              |     2|
+|331   |    \G0[41].FULL_ADDER_INST  |full_adder__42              |     5|
+|332   |      HALF_ADDER_0           |half_adder__85              |     2|
+|333   |      HALF_ADDER_1           |half_adder__84              |     2|
+|334   |    \G0[42].FULL_ADDER_INST  |full_adder__43              |     5|
+|335   |      HALF_ADDER_0           |half_adder__87              |     2|
+|336   |      HALF_ADDER_1           |half_adder__86              |     2|
+|337   |    \G0[43].FULL_ADDER_INST  |full_adder__44              |     5|
+|338   |      HALF_ADDER_0           |half_adder__89              |     2|
+|339   |      HALF_ADDER_1           |half_adder__88              |     2|
+|340   |    \G0[44].FULL_ADDER_INST  |full_adder__45              |     5|
+|341   |      HALF_ADDER_0           |half_adder__91              |     2|
+|342   |      HALF_ADDER_1           |half_adder__90              |     2|
+|343   |    \G0[45].FULL_ADDER_INST  |full_adder__46              |     5|
+|344   |      HALF_ADDER_0           |half_adder__93              |     2|
+|345   |      HALF_ADDER_1           |half_adder__92              |     2|
+|346   |    \G0[46].FULL_ADDER_INST  |full_adder__47              |     5|
+|347   |      HALF_ADDER_0           |half_adder__95              |     2|
+|348   |      HALF_ADDER_1           |half_adder__94              |     2|
+|349   |    \G0[47].FULL_ADDER_INST  |full_adder__48              |     5|
+|350   |      HALF_ADDER_0           |half_adder__97              |     2|
+|351   |      HALF_ADDER_1           |half_adder__96              |     2|
+|352   |    \G0[48].FULL_ADDER_INST  |full_adder__49              |     5|
+|353   |      HALF_ADDER_0           |half_adder__99              |     2|
+|354   |      HALF_ADDER_1           |half_adder__98              |     2|
+|355   |    \G0[49].FULL_ADDER_INST  |full_adder__50              |     5|
+|356   |      HALF_ADDER_0           |half_adder__101             |     2|
+|357   |      HALF_ADDER_1           |half_adder__100             |     2|
+|358   |    \G0[50].FULL_ADDER_INST  |full_adder__51              |     5|
+|359   |      HALF_ADDER_0           |half_adder__103             |     2|
+|360   |      HALF_ADDER_1           |half_adder__102             |     2|
+|361   |    \G0[51].FULL_ADDER_INST  |full_adder__52              |     5|
+|362   |      HALF_ADDER_0           |half_adder__105             |     2|
+|363   |      HALF_ADDER_1           |half_adder__104             |     2|
+|364   |    \G0[52].FULL_ADDER_INST  |full_adder__53              |     5|
+|365   |      HALF_ADDER_0           |half_adder__107             |     2|
+|366   |      HALF_ADDER_1           |half_adder__106             |     2|
+|367   |    \G0[53].FULL_ADDER_INST  |full_adder__54              |     5|
+|368   |      HALF_ADDER_0           |half_adder__109             |     2|
+|369   |      HALF_ADDER_1           |half_adder__108             |     2|
+|370   |    \G0[54].FULL_ADDER_INST  |full_adder__55              |     5|
+|371   |      HALF_ADDER_0           |half_adder__111             |     2|
+|372   |      HALF_ADDER_1           |half_adder__110             |     2|
+|373   |    \G0[55].FULL_ADDER_INST  |full_adder__56              |     5|
+|374   |      HALF_ADDER_0           |half_adder__113             |     2|
+|375   |      HALF_ADDER_1           |half_adder__112             |     2|
+|376   |    \G0[56].FULL_ADDER_INST  |full_adder__57              |     5|
+|377   |      HALF_ADDER_0           |half_adder__115             |     2|
+|378   |      HALF_ADDER_1           |half_adder__114             |     2|
+|379   |    \G0[57].FULL_ADDER_INST  |full_adder__58              |     5|
+|380   |      HALF_ADDER_0           |half_adder__117             |     2|
+|381   |      HALF_ADDER_1           |half_adder__116             |     2|
+|382   |    \G0[58].FULL_ADDER_INST  |full_adder__59              |     5|
+|383   |      HALF_ADDER_0           |half_adder__119             |     2|
+|384   |      HALF_ADDER_1           |half_adder__118             |     2|
+|385   |    \G0[59].FULL_ADDER_INST  |full_adder__60              |     5|
+|386   |      HALF_ADDER_0           |half_adder__121             |     2|
+|387   |      HALF_ADDER_1           |half_adder__120             |     2|
+|388   |    \G0[60].FULL_ADDER_INST  |full_adder__61              |     5|
+|389   |      HALF_ADDER_0           |half_adder__123             |     2|
+|390   |      HALF_ADDER_1           |half_adder__122             |     2|
+|391   |    \G0[61].FULL_ADDER_INST  |full_adder__62              |     5|
+|392   |      HALF_ADDER_0           |half_adder__125             |     2|
+|393   |      HALF_ADDER_1           |half_adder__124             |     2|
+|394   |    \G0[62].FULL_ADDER_INST  |full_adder__63              |     5|
+|395   |      HALF_ADDER_0           |half_adder__127             |     2|
+|396   |      HALF_ADDER_1           |half_adder__126             |     2|
+|397   |    \G0[63].FULL_ADDER_INST  |full_adder                  |     5|
+|398   |      HALF_ADDER_0           |half_adder__1               |     2|
+|399   |      HALF_ADDER_1           |half_adder                  |     2|
+|400   |  SHIFTLEFT_INST             |shiftleft                   |   289|
+|401   |  FSM_INST                   |FSM                         |    66|
++------+-----------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 01:30:04 ; elapsed = 01:34:31 . Memory (MB): peak = 1684.672 ; gain = 715.020
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 01:30:04 ; elapsed = 01:34:32 . Memory (MB): peak = 1684.672 ; gain = 715.020
+Synthesis Optimization Complete : Time (s): cpu = 01:30:04 ; elapsed = 01:34:32 . Memory (MB): peak = 1684.672 ; gain = 715.020
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.695 . Memory (MB): peak = 1684.672 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4621 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1684.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LD => LDCE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+141 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 01:30:21 ; elapsed = 01:35:12 . Memory (MB): peak = 1684.672 ; gain = 739.840
+INFO: [Common 17-1381] The checkpoint 'C:/Users/louis/Desktop/RSA/la_bonne/la_bonne.runs/synth_1/top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1684.672 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 22 22:25:53 2021...

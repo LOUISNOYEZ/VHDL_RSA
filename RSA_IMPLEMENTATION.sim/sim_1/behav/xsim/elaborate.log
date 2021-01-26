@@ -1,0 +1,32 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 2ad3b7b5947d4e1c830351e471bdbef3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package xil_defaultlib.rsa_package
+Compiling architecture reg_comp_arch of entity xil_defaultlib.reg_comp [reg_comp_default]
+Compiling architecture reg_bank_arch of entity xil_defaultlib.reg_bank [\reg_bank(addr_width=8,register_...]
+Compiling architecture reg_comp_arch of entity xil_defaultlib.reg_comp [\reg_comp(data_width=10)\]
+Compiling architecture reg_bank_arch of entity xil_defaultlib.reg_bank [\reg_bank(data_width=10,addr_wid...]
+Compiling architecture reg_comp_arch of entity xil_defaultlib.reg_comp [\reg_comp(data_width=8)\]
+Compiling architecture reg_bank_3_out_arch of entity xil_defaultlib.reg_bank_3_out [\reg_bank_3_out(data_width=8,add...]
+Compiling architecture reg_comp_arch of entity xil_defaultlib.reg_comp [\reg_comp(data_width=3)\]
+Compiling architecture bit_reg_comp_arch of entity xil_defaultlib.bit_reg_comp [bit_reg_comp_default]
+Compiling architecture counter_arch of entity xil_defaultlib.counter [\counter(counter_data_width=10)\]
+Compiling architecture half_adder_arch of entity xil_defaultlib.half_adder [half_adder_default]
+Compiling architecture full_adder_arch of entity xil_defaultlib.full_adder [full_adder_default]
+Compiling architecture adder_arch of entity xil_defaultlib.adder [adder_default]
+Compiling architecture shiftleft_arch of entity xil_defaultlib.shiftleft [\shiftleft(shift_amount_width=6)...]
+Compiling architecture fsm_arch of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture top_arch of entity xil_defaultlib.top [top_default]
+Compiling architecture top_tb_arch of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav

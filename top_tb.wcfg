@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="rsa_package" />
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1334591666666fs"></ZoomStartTime>
+      <ZoomEndTime time="1340181666667fs"></ZoomEndTime>
+      <Cursor1Time time="1400000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="322"></NameColumnWidth>
+      <ValueColumnWidth column_width="158"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/top_tb/clock_s" type="logic">
+      <obj_property name="ElementShortName">clock_s</obj_property>
+      <obj_property name="ObjectShortName">clock_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/reset_s" type="logic">
+      <obj_property name="ElementShortName">reset_s</obj_property>
+      <obj_property name="ObjectShortName">reset_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/start_s" type="logic">
+      <obj_property name="ElementShortName">start_s</obj_property>
+      <obj_property name="ObjectShortName">start_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/data_input_s" type="array">
+      <obj_property name="ElementShortName">data_input_s[63:0]</obj_property>
+      <obj_property name="ObjectShortName">data_input_s[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/done_s" type="logic">
+      <obj_property name="ElementShortName">done_s</obj_property>
+      <obj_property name="ObjectShortName">done_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/DUT/DATA_MEM/data_output_s" type="array">
+      <obj_property name="ElementShortName">data_output_s[0:191][63:0]</obj_property>
+      <obj_property name="ObjectShortName">data_output_s[0:191][63:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

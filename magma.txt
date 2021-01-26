@@ -1,0 +1,50 @@
+Message := 0x436563692065737420756e206d65737361676520646520746573742e20496c2065737420e9637269742064616e73206c276573706f697220646520737566666973656d656e74206c652072656d706c6972206166696e20646520706f75766f69722074657374657220636f6e76656e61626c656d656e74206d6f6e20696d706c;
+p := PreviousPrime(2^512);
+q := PreviousPrime(p);
+N := p*q;
+R := 2^1024;
+V := R - Modinv(N, R);
+E := Modinv(PreviousPrime(q), (p-1)*(q-1));
+R_2_MOD_N := R^2 mod N;
+
+MgtMul := function(op_a, op_b)
+    S := op_a*op_b;
+    T := ((S mod R) * V) mod R;
+    M := S + T*N;
+    U := M div R;
+    if U gt N then
+        U := U-N;
+    end if;
+    return U;
+end function;
+
+A := AssociativeArray();
+
+generate_intermediate_results := function(A)
+    x := R mod N;
+    a := MgtMul(Message,R_2_MOD_N);
+    A[0] := a;
+    J := 1;
+    for i := 1 to 1024 do
+        x := MgtMul(x,x);
+        A[J] := x;
+        J := J+1;
+        if (BitwiseAnd(E,2^(1024-i)) ne 0) then
+            x := MgtMul(a,x);
+            A[J] := x;
+            J := J+1;
+        end if;
+    end for;
+    x := MgtMul(x,1);
+    A[J] := x;
+    return A;
+end function;
+
+B := generate_intermediate_results(A);
+B[0]:Hex;
+B[1]:Hex;
+B[2]:Hex;
+B[#B-1]:Hex;
+test := Modexp(Message, E, N);
+test:Hex;
+
