@@ -12,3 +12,4 @@ Des simulations fonctionnelles ont permis de vérifier le design. Celui-ci peut 
 ![RESULTATS](final_simu.png)
 
 En partant des paramètres générés, notre implémentation a su calculer le même résultat que celui donné par la fonction Modexp de Magma calculator.
+La donnée de résultat est stockée dans les registres 80 à 95 par ordre de bits de poids faibles.
